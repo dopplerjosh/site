@@ -1,109 +1,139 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
 <HEAD>
 <TITLE> Atmospheria Group - Home </TITLE>
 <link rel="shortcut icon" href="images/widget.png"/>
-<link rel="stylesheet" type="text/css" href="web.css" />
+<link rel="stylesheet" type="text/css" href="overhaul.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
 </HEAD>
 <BODY>
-
-
-<!--
-<p style="background-color:#FFA200;">
-<center>
-<a href="wx.html" style="background-color:#FFA200;"><img src="images/advisory.gif" height="50px" width="750px"/></a>
-</center>
-</p>
--->
-
-<img src="images/swooshpictitlewidget.png" width=101% />
-<img src="images/front.jpg" width=100%>
-
-
-<div class="bodytext">
-<h2>HOME</h2>
-
-
-
+<div class="wrapper">
+<header>
+  <img class="logo" src="images/atmosnew.png" width="33%" style="max-height:95px;">
 
 <ul>
-<li><a href="index.html">Home</a></li>
-<li>
-<div class="dropdown">
-  <div class="dropbtn"><a href="about.html">About</a></div>
-  <div class="dropdown-content">
-    <a href="severe.html">Severe Weather</a>
-    <a href="avwx.html">Aviation Weather</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div> 
-</li>
-<li>
-<div class="dropdown">
-  <div class="dropbtn"><a href="wx.html">Weather</a></div>
-  <div class="dropdown-content">
-    <a href="climoutlook.html">Climate Outlooks</a>
-    <a href="wxdisc.html">Discussion</a>
-    <a href="generated.html">Generated Plots</a>
-  </div>
-</div> 
-</li>
+<li><a href="index1.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="wx.html">WEATHER</a></li>
+<li><a href="contact.html">CONTACT</a></li>
 </ul>
-<br><br>
+</header>
+
+<main>
+
+<img src="images/front.jpg" width="100%" />
+
+<div class="row" vspace="10">
 <hr>
-
-
-
-<font size="5">
-<p>Welcome!</p>
-</font>
-<font size="4">
-<p>This web site is a project and a resource for ATM OCN 452 at the University of Wisconsin. Visit the above links for weather information and more about me.</p>
-</font>
-
-<div class="row">
-  <div class="column">
-  <font size="5">
-<p>News:</p>
-</font>
-
-<table>
-<tr><td><a href="news/sccovid.html">South Carolina Emergency Management Issues Civil Emergency Message for COVID-19 ></a></td></tr>
-
-</table>
-  </div>
-  
-
-
-
-
-  <div class="column">
-  <p style="text-align:center;">
-
-<font size="5">
-Current Conditions at AOSS:
-</font>
-<br>
-<iframe src="http://metobs.ssec.wisc.edu/aoss/tower/text_popup/index.html" style="border: solid think #c5c5c5; width:300px; height:400px"></iframe></p>
-<!--
 <p>
-Current marine conditions on Lake Michigan:
-</p>
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45007" style="border: solid thin #c5c5c5; width:300px; height:400px"></iframe>
--->
-  </div>
-</div>
-
-</div>
-
-
-
-<p style="width:100%;background-color:#373434;min-height:130px;text-align:center;color:#f1f1f1;font-family:Open Sans;">
+<img src="images/aoss.png" height="400px" align="left" hspace="20" vspace="20">
+<center><h1>Welcome to the new site!</h1></center>
+<font size="4">
 <br>
-Content © Atmospheria Research Group, 2019<br>
-<img src="images/uwaosdark.png" width="20%" height="20%"/><br>
+I'm glad you're here!
+<br><br>
+The home page has been refreshed to include news updates from the state and the country, in addition to the smoother look site-wide.
+<br><br>
+The continued work on this website, which began as a 10-point ATM OCN 452 lab/project, is motivated by a desire to grow my HTML and CSS coding skills. The abundance of time now offered by social distancing efforts has further fueled the project.
+</font>
 </p>
+<br><br><br>
+</div>
+<br>
+<div class="row">
+<img src="resources/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;"/>
+
+<section class="cards">
+
+<!--   card 1 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__02" src="https://abbeyjfitzgerald.com/wp-content/uploads/2018/01/cloud.svg" alt="" width="100%"/>
+    </picture>
+    <div class="card-content">
+      <p class="category category__02">Curent Weather</p>
+      <h2>RIG Observations</h2>
+      <iframe src="http://metobs.ssec.wisc.edu/aoss/tower/text_popup/index.html" style="width:250px; height:200px"></iframe>
+   </div><!-- .card-content -->
+    
+  </article>
+
+<!--   card 2 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__02" src="images/covidcard.png" alt="" width="100%"/>
+    </picture>
+    <div class="card-content">
+      <p class="category category__02">COVID-19</p>
+      <h2>COVID in Wisco</h2>
+      <p>COVID chaos continues in Wisconsin as cases begin to spike again. STAY HOME, STAY SAFE.</p>
+      <p><strong>Public Health Madison & Dane County Emergency Order #8 requires masks while indoors.</strong></p>
+   </div><!-- .card-content -->
+    
+  </article>
+
+<!--  
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__02" src="images/cardwidget.png" alt="" width="100%"/>
+    </picture>
+    <div class="card-content">
+      <p class="category category__02">Site Updates</p>
+      <h2>Website Overhaul</h2>
+      <p>The Atmospheria website is undergoing a modernization overhaul over the upcoming weeks in an effort to simplify user navigation and aesthetic appeal. A number of pages will be migrated into others or sundowned entirely. Report broken links, images, or other problems through the <a href="contact.html"><em>Contact</em>  ></a> page.</p>
+   </div> -->
+    
+  </article>
+
+
+<!--   card 4 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__02" src="images/cardnws.png" alt="NOAA National Weather Service" width="100%"/>
+    </picture>
+    <div class="card-content">
+      <p class="category category__02">FORECASTING</p>
+      <h2>FORECASTS RETURN</h2>
+      <p>Active forecasting will return to the Atmospheria Project as winter weather threats begin to affect the Midwestern United States. Visit the <a href="wx.html">weather > </a> page for more information.</p>
+   </div><!-- .card-content -->
+   
+  </article>
+
+</section>
+
+</div>
+<img src="resources/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;"/>
+<div class="row">
+<p>
+<img src="images/grad.jpg" height="400px" align="right" hspace="20">
+<center><h1>So... what next?</h1></center>
+<font size="4">
+<br>
+With my time at the University of Wisconsin behind me, I'm actively pursuing professional experiences in the Aviation, Logistics, and Meteorology fields.
+<br><br>
+I look forward to the opportunities that have yet to come--<br> especially in the age of COVID!
+</font>
+</p>
+
+</div>
+
+
+
+</main>
+<footer>
+<p style="font-size:medium;">
+Content © Atmospheria Project, 2020
+<br>
+<img src="images/uwaosdark.png" width="20%" />
+</p>
+</footer>
+
+
+
 </BODY>
 </HTML>
