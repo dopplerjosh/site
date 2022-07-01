@@ -1,0 +1,336 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 125px;
+  margin-top: -2.13178%;
+  margin-left: -2.13178%;
+  margin-right: -2.13178%;
+  background-color: #c5c5c5;
+  padding: 3% 5% 3% 5%;
+}
+
+footer {
+  min-height: 500px;
+  margin-left: -2.13178%;
+  margin-right: -2.13178%;
+  margin-bottom: -2.13178%;
+  background-color: #373434;
+  padding: 3% 5% 3% 5%;
+  color:#f1f1f1;
+  text-align: center;
+  flex-shrink: 0;
+  font-size: medium;
+}
+
+main {
+  flex: 1;
+  margin-left: -2.13178%;
+  margin-right: -2.13178%;
+}
+
+
+// Rules below just for niceness
+body {
+  margin: 0;
+  font-family: "Open Sans",sans-serif;
+}
+
+
+
+main {
+  background-color:#f9f9f9;
+}
+
+.row{
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+ul{
+list-style-type: none;
+margin: 0;
+padding-left: 0;
+color: #878787;
+float: right;
+font-size: x-large;
+font-weight: bold;
+}
+
+li{
+display: inline;
+float: left;
+color: #878787;
+padding-left: 70px;
+padding-top: 15px;
+}
+
+a{
+display: inline;
+color: #878787;
+
+}
+
+a:active{
+text-decoration: none;
+}
+
+li a:hover{
+background-color: ;
+}
+
+td:hover{
+background-color:#;
+}
+
+body{
+background-color:#F9F9F9;
+font-family: sans-serif;
+
+}
+
+.bodytext{
+margin-right: 100px;
+margin-left: 100px;
+margin-bottom: 30px;
+font-family: "Open Sans", sans-serif;
+color: #878787;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #454343;
+}
+
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+
+hr{
+  width: 100%;
+  height: 4px;
+  border: none;
+  clear: both;
+  margin: 5px 0 10px;
+  background-image: url(/resources/hr.png);
+  background-position: 50% top;
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+
+h2 {
+  color: #000;
+  margin: 2rem 0 .5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+forecastbox{
+  color: #e0e0e0;
+  min-height: 150px;
+}
+
+.cardimg {
+  display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+/***************************           Cards            *******************************/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.card {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: .5rem;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+} /* li item */
+
+.thumbnail img {
+  fill: #c7c4c4;
+  height: 135px;
+  opacity: .5;
+  padding: 1.5rem;
+  align-self: center;
+}
+
+.card-content {
+    font-size: .75rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.panel.card-panel .panel-header {
+    background-color: #ffffff;
+    font-size: .75rem;
+    font-weight: 400;
+    height: 25px !important;
+}
+
+.panel.card-panel .panel-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.category {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+footer {
+  border-top: 2px solid #e7e7e7;
+  margin: .5rem 0 0;
+  min-height: 30px;
+  font-size: .5rem;
+}
+
+.category {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    color: #fff;
+    background: #e74c3c;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.category__02 {
+  background-color: #5d5e5e;
+}
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    background-color: red; /* change to desired color */
+}
+.logo {
+    display: inline-block;
+    max-height: 95px;
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+}
+
+.fling-minislide {width:800px; height:550px; padding-bottom: 50%;  position:relative; margin: auto;}
+.fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(3){animation-delay:0s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:20s;}
+
+div{
+  posititon: relative;
+}
+.js-nametag{
+  position: absolute;
+}
+.js-nametag:nth-child(1){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;  
+}
+
+
+.js-nametag:nth-child(2){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes fade{
+    0%,50% {
+      opacity: 0;
+}
+    100%{
+      opacity: 1;
+  }
+}
