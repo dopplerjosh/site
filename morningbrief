@@ -1,0 +1,111 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<HEAD>
+<TITLE> X FLT Morning Brief </TITLE>
+<link rel="shortcut icon" href="images/widget.png"/>
+<link rel="stylesheet" type="text/css" href="overhaul.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+  <img class="logo" src="images/atmosnew.png" width="33%">
+
+<ul>
+<li><a href="index1.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="wx.html">WEATHER</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</header>
+<main>
+
+<div class="row">
+<center>
+<p>
+<table style="width:50%">
+<tr>
+<th><a href="https://www.daip.jcs.mil/daip/mobile/index">NOTAMS ></th>
+<th><a href="http://www.usahas.com/"><img src="http://www.usahas.com/img/logo-1.png" height="100" width="200" title="US Avian Hazard Advisory System" hspace="5" vspace="10"/></a></th>
+<th><a href="https://www.aviationweather.gov/">AWC ></th>
+</tr>
+</table>
+</p>
+</center>
+
+<p>
+<h1>Status Page</h1>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1ERy0J2sdx_6Qhh-dHBH_4meSCyuyfhjdP0Bi2PFwm9s/htmlview" title="Status Page" style="border:none;height:950px;width:100%;"></iframe>
+</p>
+
+
+<img src="resources/hr.png" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px"/>
+
+<p>
+<center>
+METAR/TAF
+<br><br>
+<iframe src="https://e6bx.com/weather/KDLF/" title="Status Page" style="border:none;height:500px;width:100%;"></iframe>
+<br><br>
+WEATHER
+<br><br>
+<iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=29.145&lon=-100.580&detailLat=29.361&detailLon=-100.794&width=650&height=450&zoom=9&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+</center>
+</p>
+
+
+<!--
+<img src="resources/hr.png" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px"/>
+<p>
+<center>
+<table style="width:50%">
+<tr>
+<th><a href="http://www.weather.gov"><img src="images/nws.png" height="100" width="100" title="National Weather Service" hspace="5" vspace="10"/></a></th>
+<th><a href="http://aos.wisc.edu/weather"><img src="images/wisc.png" height="100" width="70" title="UW AOS Weather" hspace="5" vspace="10"/></a></th>
+<th><a href="http://pivotalweather.com"><img src="images/pivotal.png" height="100" width="100" title="Pivotal Weather" hspace="5" vspace="10"/></a></th>
+</tr>
+<tr>
+<th><a href="http://nhc.noaa.gov"><img src="images/nhc.png" height="100" width="100" title="NOAA National Hurriane Center" hspace="5" vspace="10"/></a></th>
+<th><a href="http://spc.noaa.gov"><img src="images/spc.png" height="100" width="100" title="NOAA Storm Prediction Center" hspace="5" vspace="10"/></a></th>
+<th><a href="https://www.windy.com/multimodel/43.140/-89.338?42.684,-89.335,8,m:eQ2adGh"><img src="images/windy.png" height="100" width="100" title="Windy - MSN Multimodel Forecasting" hspace="5" vspace="10"/></a><th>
+</tr>
+</table>
+</center>
+</p>
+-->
+
+<img src="resources/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;"/>
+<p><center>
+RAIM Outlook
+<br><br>
+<img src="https://sapt.faa.gov/npa_baro.png?t=1653323368" />
+<br><br>
+</center>
+
+
+</p>
+
+</div>
+
+</main>
+<footer>
+<p style="font-size:small;">
+
+<img src="footerimage.png" width="60%" />
+<br><br>
+The above content is provided for situational awareness only and is not intended to supersede published manuals or instructions.
+
+
+</p>
+</footer>
+
+
+
+</BODY>
+</HTML>
