@@ -220,7 +220,7 @@ forecastbox{
 .thumbnail img {
   fill: #c7c4c4;
   height: 135px;
-  opacity: .5;
+  opacity: 0;
   padding: 1.5rem;
   align-self: center;
 }
