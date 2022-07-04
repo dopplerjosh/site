@@ -214,7 +214,8 @@ forecastbox{
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  color: #FFFFFF;
+  color: #5d5e5e;
+  background-color: #FFFFFF;
 } /* li item */
 
 .thumbnail img {
