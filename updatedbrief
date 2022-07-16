@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<HEAD>
+<TITLE> X FLT Morning Brief </TITLE>
+<link rel="shortcut icon" href="images/widget.png"/>
+<link rel="stylesheet" type="text/css" href="overhaul.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+  <img class="logo" src="images/atmosnew.png" width="33%">
+
+<ul>
+<li><a href="index1.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="wx.html">WEATHER</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</header>
+<main>
+
+<div class="row">
+<center>
+NOBODY GETS THE STATUS UNTIL THE SNACKO HAS BEEN PAID.
+</center>
+
+
+</p>
+
+</div>
+
+</main>
+<footer>
+<p style="font-size:small;">
+
+<img src="footerimage.png" width="60%" />
+<br><br>
+The above content is provided for situational awareness only and is not intended to supersede published manuals or instructions.
+
+
+</p>
+</footer>
+
+
+
+</BODY>
+</HTML>
