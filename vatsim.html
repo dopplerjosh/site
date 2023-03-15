@@ -4,7 +4,7 @@
 
 
 <HEAD>
-<TITLE> Atmospheria Project - Weather </TITLE>
+<TITLE> Atmospheria Project - VATSIM Resource Center </TITLE>
 <link rel="shortcut icon" href="images/widget.png"/>
 <link rel="stylesheet" type="text/css" href="overhaul.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 
 <div class="row">
 <p>
-<h1>EYES TO THE SKY</h1>
+<h1>VATSIM RESOURCES</h1>
 <font size="4">
 <b>Welcome to The Weather Center.</b>
 <br><br>
@@ -63,6 +63,32 @@ Due to a state-wide civil emergency, forecasts will be unavailable until further
 </p>
 -->
 
+  
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+  
+  
+  
 <img src="resources/hr.png" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px"/>
 <p>
 <center>
@@ -99,13 +125,7 @@ Storm Prediction Center Graphics
 
 </div>
   <center>
-<br><br>
-<img src="resources/hr.png" vspace="10">
-    <br><br>
-EWX Area Forecast Discussion
-  <br><br>
-<iframe src="https://forecast.weather.gov/product.php?site=EWX&issuedby=EWX&product=AFD&format=TXT&version=1&glossary=0" style="width:100%;height:500px;border:none;" title="EWX AFD"></iframe>
-  
+
   </center>
 </p>
 
@@ -114,7 +134,6 @@ EWX Area Forecast Discussion
 </main>
 <footer>
 <p style="font-size:medium;">
-The Atmospheria Project, 2020
 <br>
 <img src="images/dj.png" width="20%" />
 </p>
