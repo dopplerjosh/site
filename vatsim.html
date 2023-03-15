@@ -28,40 +28,7 @@
 <div class="row">
 <p>
 <h1>VATSIM RESOURCES</h1>
-<font size="4">
-<b>Welcome to The Weather Center.</b>
-<br><br>
-Select resources are available through the directory below. Current National Weather Service Watches, Warnings, & Advisories and Storm Prediction Center products are presented front and center. 
 </p>
-
-
-<!--
-<p style="background-color:#f5f5f5;margin-left:100px;margin-right:100px;min-height:200px;padding:10px;">
-<font size="5">Forecast</font>
-<BR><br>
-.NOW...
-<br><br>
-Clear skies and otherwise chilly conditions in the Chicago area for the start of the evening... cloud formation will result in overcast conditions as the weekend approaches.
-<br><br>
-.TODAY...
-<br><br>
-[OMITTED]
-<br><br>
-.TOMORROW...
-<br><br>
-Overcast conditions foreshadow a snow event that should begin with flurries midday on Saturday. Snow is expected to begin accumulating around 1400-1500 local time for the Chicago region. Accumulation is expceted to increase quickly-- avoid travel if possible, and exercise extreme caution while driving if travel is necessary. 4+ inches of snow could be possible by the end of the day.
-<br><br>
-.LONGER TERM...
-<br><br>
-Snow showers are expected to continue through Sunday, tapering off as the day concludes. Snow totals could range from 7 to 10 inches at the end of the snow event. Moderate winds and overcast conditions should transition to a brief period of sunlight and otherwise clear skies late Monday afternoon into Friday evening.
-<br><br>
-
-Due to a state-wide civil emergency, forecasts will be unavailable until further notice. Monitor information from your local  National Weather Service forecast office and local media outlets for further instructions.
-<br><br>
-<span style="color:#9e9e9e"><em>Last updated ######### at ####Z. Forecasts may not be updated daily. This forecast is generated as an exercise and is not designed for official use.</em></span>
-</p>
--->
-
   
 <!-- Tab links -->
 <div class="tab">
@@ -138,7 +105,28 @@ Storm Prediction Center Graphics
 </p>
 </footer>
 
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
 
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
 
 </BODY>
 </HTML>
