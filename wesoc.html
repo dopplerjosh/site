@@ -1,0 +1,203 @@
+<html sv_role="main" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style type="text/css" id="__safly_default_style">
+</style>
+<title> DopplerNet - WESOC Dashboard </title>
+<link rel="icon" type="image/x-icon" href="images/radarbeam.png">
+<link rel="stylesheet" type="text/css" href="overhaul.css">
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+  <img class="logo" src="images/patch.png" height="120px">
+
+<ul>
+<li><a href="http://www.dopplerjosh.com/index.html">HOME</a></li>
+<li><a href="http://www.dopplerjosh.com/about.html">ABOUT</a></li>
+<li><a href="wesoc.html">DASHBOARD</a></li>
+<li><a href="shiftchange.html">SHIFT CHANGE</a></li>
+</ul>
+</header>
+<main>
+
+<div class="row">
+<p>
+</p><h1>WESOC OPERATIONS DASHBOARD</h1>
+<font size="4">
+Select resources are available through the directory below. Current National Weather Service Watches, Warnings, &amp; Advisories and Storm Prediction Center products are presented front and center. 
+<p></p>
+
+
+
+
+<img src="images/hr.png" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px">
+<p>
+</p><center>
+<table style="width:50%">
+<tbody><tr>
+<th><a href="http://www.weather.gov/"><img src="images/nwslogo.gif" height="100" width="100" title="National Weather Service" hspace="5" vspace="10"></a></th>
+<th><a href="http://www.aviationweather.gov/"><img src="images/awc.png" height="100" width="100" title="Aviation Weather Center" hspace="5" vspace="10"></a></th>
+<th><a href="http://pivotalweather.com/"><img src="images/pivotal.png" height="100" width="100" title="Pivotal Weather" hspace="5" vspace="10"></a></th>
+</tr>
+<tr>
+<th><a href="http://nhc.noaa.gov/"><img src="images/nhc.png" height="100" width="100" title="NOAA National Hurriane Center" hspace="5" vspace="10"></a></th>
+<th><a href="http://spc.noaa.gov/"><img src="images/spc.png" height="100" width="100" title="NOAA Storm Prediction Center" hspace="5" vspace="10"></a></th>
+<th><a href="https://www.windy.com/multimodel/43.140/-89.338?42.684,-89.335,8,m:eQ2adGh"><img src="images/windy.png" height="100" width="100" title="Windy - MSN Multimodel Forecasting" hspace="5" vspace="10"></a></th><th>
+</th></tr>
+</tbody></table>
+</center>
+<p></p>
+
+<img src="images/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;">
+<p></p><center>
+Watches, Warnings, and Advisories
+<br><br>
+<img src="https://forecast.weather.gov/wwamap/png/US.png">
+<br><br>
+<img src="images/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;">
+<br><br>
+Storm Prediction Center Graphics
+</center>
+<br><br>
+<div class="fling-minislide">
+  <img src="https://www.spc.noaa.gov/products/md/validmd.png" alt="Storm Prediction Center Valid Mesoscale Discussions">
+  <img src="https://www.spc.noaa.gov/products/watch/validww.png" alt="Storm Prediction Center Convective Watches">
+  <img src="https://www.spc.noaa.gov/products/outlook/day1otlk-overview.gif" alt="Storm Prediction Center Day 1 Outlook">
+
+</div>
+  <center>
+
+<img src="images/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;">
+</center>
+
+<div class="row">
+<div class="tab">
+<button class="tablink" onclick="openTab('pireps', this, 'gray')" id="defaultOpen">PIREPs</button>
+<button class="tablink" onclick="openTab('watchcrit', this, 'gray')">Watch Criteria</button>
+<button class="tablink" onclick="openTab('warningcrit', this, 'gray')">Warning Criteria</button>
+<button class="tablink" onclick="openTab('advisorycrit', this, 'gray')">Advisory Criteria</button>
+<button class="tablink" onclick="openTab('tafcats', this, 'gray')">WESOC TAF Categories</button>
+<button class="tablink" onclick="openTab('vistable', this, 'gray')">Vis Table</button>
+<br>
+<div id="pireps" class="tabcontent" style="display: none;">
+  <p><h3>PIREPs</h3></p>
+  <p>
+<form oninput="output.value = icao.value + ' ' + urgency.value + ' /OV ' + over.value + '/TM ' + time.value + '/FL' + level.value + '/TP ' + type.value + '/SK ' + sky.value + '/WX ' + wx.value + '/TA ' + temp.value + '/WV ' + winds.value + '/TB ' + turb.value + '/IC ' + ice.value + '/RM ' + rmk.value">
+  ICAO : <input type="text" name="icao" /><br>
+  UA/UUA : <input type="text" name="urgency" /><br>
+  /OV : <input type="text" name="over" /> <br>
+  /TM : <input type="text" name="time" /><br>
+  /FL : <input type="text" name="level" /><br>
+  /TP : <input type="text" name="type" /><br>
+  /SK : <input type="text" name="sky" /><br>
+  /WX : <input type="text" name="wx" /><br>
+  /TA : <input type="text" name="temp" /><br>
+  /WV : <input type="text" name="winds" /><br>
+  /TB : <input type="text" name="turb" /><br>
+  /IC : <input type="text" name="ice" /><br>
+  /RM : <input type="text" name="rmk" /><br><br>
+  OUTPUT : <input type="text" name="output" size="100">
+</form>
+  </p>
+</div>
+
+<div id="watchcrit" class="tabcontent" style="display: block;">
+  <h3>WATCH CRITERIA</h3>
+  <p><img src="images/watchcriteria.png"></p>
+</div>
+
+<div id="warningcrit" class="tabcontent" style="display: block;">
+  <h3>WARNING CRITERIA</h3>
+  <p><img src="images/warningcriteria.png"></p>
+</div>
+
+<div id="advisorycrit" class="tabcontent" style="display: block;">
+  <h3>ADVISORY CRITERIA</h3>
+  <p><img src="images/advisorycriteria.png"></p>
+</div>
+
+<div id="tafcats" class="tabcontent" style="display: block;">
+  <h3>TAF CATEGORIES</h3>
+  <p><img src="images/tafcats.png"></p>
+</div>
+
+<div id="vistable" class="tabcontent" style="display: block;">
+  <h3>VISIBILITY</h3>
+  <p><img src="images/vistable.png"></p>
+</div>
+
+
+
+</div>
+</div>
+<div class="row">
+<center>
+<img src="images/hr.png" vspace="10" style="display:block;margin-left:auto;margin-right:auto;width:80%;padding:10px;">
+  
+  <br><br>
+Product Generation Guidance
+  <br><br>
+<a href="resources/afman15-111.pdf" target="regbox">( AFMAN15-111 )</a>
+<a href="resources/specicriteria.pdf" target="regbox">( Speci Criteria - Atch 2 )</a>
+<a href="resources/obsremarks.pdf" target="regbox">( Obs Remarks - Atch 3 )</a>
+<iframe name="regbox" src="resources/afman15-111.pdf" style="width:100%;height:1000px;border:none;" title="15W Regulations Viewer"></iframe>
+  
+  </center>
+</div>
+
+
+
+
+
+
+<p></p>
+
+</font></div><font size="4">
+
+</font></main><font size="4">
+<footer>
+<p style="font-size:medium;">
+For training use only. Verify currency of publications prior to use.
+<br>
+
+</p>
+</footer>
+
+
+
+
+
+
+</font></div>
+
+
+<script>
+function openTab(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
