@@ -27,10 +27,11 @@
   
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onmouseover="openARTCC(event, 'ZAB')" id="defaultOpen">ZAB</button>
-  <button class="tablinks" onmouseover="openARTCC(event, 'ZHU')">ZHU</button>
-  <button class="tablinks" onmouseover="openARTCC(event, 'ZFW')">ZFW</button>
-  <button class="tablinks" onmouseover="openARTCC(event, 'phrase')">Phraseology</button>
+  <button class="tablinks" onclick="openARTCC(event, 'ZAB')" id="defaultOpen">ZAB</button>
+  <button class="tablinks" onclick="openARTCC(event, 'ZHU')">ZHU</button>
+  <button class="tablinks" onclick="openARTCC(event, 'ZFW')">ZFW</button>
+  <button class="tablinks" onclick="openARTCC(event, 'phrase')">Phraseology</button>
+  <button class="tablinks" onclick="openARTCC(event, 'ots')">C1 OTS</button>
 </div>
 
 <!-- Tab content -->
@@ -74,6 +75,51 @@
   <p>
     <h4>Weather Deviations</h4>
     <i>[CALLSIGN], area of <span title="Moderate, Heavy, Extreme">[INTENSITY]</span> precipitation between [CLOCK DIRECTION] and [CLOCK DIRECTION], [DISTANCE] miles... Deviation (RESTRICTIONS, IF APP.) approved, when able, proceed direct [NAVAID/WAYPOINT/FIX].</i>
+  </p>
+  <p>
+    <h4>Holding</h4>
+    Published<br>
+    <i>[CALLSIGN], cleared to [FIX], hold as published. Maintain [ALTITUDE]. Expect further clearance at [TIME].</i>
+    <br><br>
+    Unpublished<br>
+    <i>[CALLSIGN], cleared to [FIX], hold [DIRECTION] of [FIX] on the [XXX] radial, [XX] minute/mile legs, left/right turns, maintain [ALTITUDE], expect further clearance [TIME].</i>
+    <br><br>
+    Cancellation<br>
+    <i>[CALLSIGN], cleared to [DESTINATION] via last cleared routing.</i><br>
+    <i>[CALLSIGN], cleared to [DESTINATION] via direct [FIX] to rejoin the [STAR] arrival.</i><br>
+    <i>{CALLSIGN], cleared to [DESTINATION], resume the [STAR] arrival.</i>
+    <br><br>
+    Leg Lengths<br>
+    - AOB 14,000' - 1 min legs
+    - Above 14,000' - 1.5 min legs
+  </p>
+</div>
+
+<div id="ots" class="tabcontent">
+  <h3>C1 OTS Prep</h3>
+  <h4>Enroute Radar Separation</h4>
+  <p>Below FL600 - 5NM<br>
+    At of Above FL600 - 10NM<br>
+    2.5NM from adjacent airspace<br>
+    *** BEHIND SUPER - 5NM ***
+  </p>
+  <h4>Wake Turbulence</h4>
+  <p>
+    Behind Super - 5 mi<br>
+    <i>If Super oeprating at or below FL240 and below 250 knots:</i><br>
+    - Heavy - 6 mi<br>
+    - Large - 7 mi<br>
+    - Small - 8 mi<br>
+    Behind Heavy<br>
+    - Heavy - 4 mi
+    - Large / Small - 5 mi
+  </p>
+  <h4>Reduced Radar Separation</h4>
+  <p>3mi transitioning to/from the Terminal and EnRoute environments</p>
+  <h4>Class A Vertical Separation</h4>
+  <p>- AOB FL410 - 1,000ft (RVSM)<br>
+    - Above FL410 - 2,000ft<br>
+    - Above FL500 - 5,000ft  
   </p>
 </div>
 
