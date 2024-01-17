@@ -26,6 +26,10 @@
 <h1>TAF WORKSPACE</h1>
 
 <label>
+    DATE/TIME GROUP: <br />
+    <textarea id="dtg" placeholder="YYYYMMDD/XXXXZ" rows="1" cols="14" ></textarea>
+</label>
+<label>
     VIV: <br />
     <textarea id="viv" placeholder="VIV DISCUSSION" rows="1" cols="100" ></textarea>
 </label>
@@ -59,13 +63,14 @@
 
 <script>
 function yes() {
+var dtg = document.getElementById('dtg');
 var button = document.getElementById('test');
 var viv = document.getElementById('viv');
 var synoptic = document.getElementById('synoptic');
 var radarsat = document.getElementById('radarsat');
 var taf = document.getElementById('taf');
 var discussion = document.getElementById('discussion');
-    var str = 'TAF PUBLICATION BULLETIN<br />KTIK-WWO-20240116/1200Z' + '<br /><br />'+ taf.value + '<br /><br />.VIV DISCUSSION...<br />' + viv.value + 
+    var str = 'TAF PUBLICATION BULLETIN<br />KTIK-WWO-' + dtg.value + '<br /><br />'+ taf.value + '<br /><br />.VIV DISCUSSION...<br />' + viv.value + 
         '<br /><br />.SYNOPTIC DISCUSSION...<br />' + synoptic.value +
         '<br /><br />.RADAR/SATELLITE...<br />' + radarsat.value + '<br /><br />.FORECAST DISCUSSION...<br />' + discussion.value;
     document.getElementById('test').innerHTML=str;
