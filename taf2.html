@@ -62,9 +62,9 @@ var synoptic = document.getElementById('synoptic');
 var radarsat = document.getElementById('radarsat');
 var taf = document.getElementById('taf');
 var discussion = document.getElementById('discussion');
-    var str = 'TAF PUBLICATION BULLETIN<br />KTIK-WWO-20240116/1200Z' + '<br />' + viv.value + 
-        ', you are ' + synoptic.value +
-        ' years old and from ' + radarsat.value + ' taf next ' + taf.value + ' discussion next ' + discussion.value;
+    var str = 'TAF PUBLICATION BULLETIN<br />KTIK-WWO-20240116/1200Z' + '<br /><br />'+ taf.value + '<br /><br />.VIV DISCUSSION...<br />' + viv.value + 
+        '<br /><br />.SYNOPTIC DISCUSSION...<br />' + synoptic.value +
+        '<br /><br />.RADAR/SATELLITE...<br />' + radarsat.value + '<br /><br />.FORECAST DISCUSSION...<br />' + discussion.value;
     document.getElementById('test').innerHTML=str;
 };
 </script>
