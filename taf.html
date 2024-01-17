@@ -1,0 +1,60 @@
+<html sv_role="main" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style type="text/css" id="__safly_default_style">
+</style>
+<title> DopplerNet - TAF Workspace </title>
+<link rel="icon" type="image/x-icon" href="images/radarbeam.png">
+<link rel="stylesheet" type="text/css" href="overhaul.css">
+</head>
+
+<body>
+<div class="wrapper">
+<header>
+  <img class="logo" src="images/patch.png" height="120px">
+
+<ul>
+<li><a href="http://www.dopplerjosh.com/index.html">HOME</a></li>
+<li><a href="http://www.dopplerjosh.com/about.html">ABOUT</a></li>
+<li><a href="wesoc.html">DASHBOARD</a></li>
+<li><a href="shiftchange.html">SHIFT CHANGE</a></li>
+</ul>
+</header>
+<main>
+
+  
+<p>
+</p><h1>TAF WORKSPACE</h1>
+
+<label>
+    Enter name: 
+    <input id="name" />
+</label>
+<br />
+<label>
+    Enter age: 
+    <input id="age" />
+</label>
+<br />
+<label>
+    Enter location: 
+    <input id="location" />
+</label>
+<br />
+<button onclick="yes()">Test</button>
+<p id="test"></p>
+</body>
+
+<script>
+function yes() {
+var button = document.getElementById('test');
+var name = document.getElementById('name');
+var age = document.getElementById('age');
+var location = document.getElementById('location');
+    var str = 'Hello ' + name.value + 
+        ', you are ' + age.value +
+        ' years old and from ' + location.value;
+    document.getElementById('test').innerHTML=str;
+};
+</script>
+</body>
+</html>
