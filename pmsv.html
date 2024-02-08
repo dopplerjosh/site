@@ -2,7 +2,7 @@
 <head>
 <style type="text/css" id="__safly_default_style">
 </style>
-<title> DopplerNet - TAF Workspace </title>
+<title> DopplerNet - PMSV Map </title>
 <link rel="icon" type="image/x-icon" href="images/radarbeam.png">
 <link rel="stylesheet" type="text/css" href="overhaul.css">
 </head>
@@ -23,60 +23,17 @@
 
   
 <div class="row">
-<h1>TAF WORKSPACE</h1>
+<h1>Pilot-to-Metro Service (PMSV) Frequency Map</h1>
 
-<label>
-    DATE/TIME GROUP: <br />
-    <input id="date" placeholder="YYYYMMDD" cols="8" />/<input id="time" placeholder="XXXX" cols="4" />Z
-</label>
-<br /><br />
-<label>
-    VIV: <br />
-    <textarea id="viv" placeholder="VIV DISCUSSION" rows="1" cols="100" ></textarea>
-</label>
-<br /><br />
-<label>
-    Synoptics: <br />
-    <textarea id="synoptic" placeholder="SYNOPTIC DISCUSSION" rows="4" cols="100" ></textarea>
-</label>
-<br /><br />
-<label>
-    NEXRAD/METSAT: <br />
-    <textarea id="radarsat" placeholder="REMOTE SENSING DISCUSSION" rows="4" cols="100" ></textarea>
-</label>
-<br /><br />
-<label>
-    TAF: <br />
-    <textarea id="taf" placeholder="TAF" rows="8" cols="100" ></textarea>
-</label>
-<br /><br />
-<label>
-    DISCUSSION: <br />
-    <textarea id="discussion" placeholder="FORECAST DISCUSSION" rows="10" cols="100" ></textarea>
-</label>
-<br /><br />
-<button onclick="yes()">Submit</button>
-  <br /><br />
-<p id="test" style="background-color:#f5f5f5;margin-left:100px;margin-right:100px;min-height:200px;padding:10px;font-family:'Courier New';white-space:pre;"></p>
-  <br /><br />
+<img src="images/pmsv.png" usemap="#pmsv-map">
 
+
+
+
+
+  
 </div>
 
-<script>
-function yes() {
-var date = document.getElementById('date');
-var time = document.getElementById('time');
-var button = document.getElementById('test');
-var viv = document.getElementById('viv');
-var synoptic = document.getElementById('synoptic');
-var radarsat = document.getElementById('radarsat');
-var taf = document.getElementById('taf');
-var discussion = document.getElementById('discussion');
-    var str = 'TAF PUBLICATION BULLETIN<br />KTIK-WWO-' + date.value + '/' + time.value + 'Z' + '<br /><br />'+ taf.value + '<br /><br />.VIV DISCUSSION...<br />' + viv.value + 
-        '<br /><br />.SYNOPTIC DISCUSSION...<br />' + synoptic.value +
-        '<br /><br />.RADAR/SATELLITE...<br />' + radarsat.value + '<br /><br />.FORECAST DISCUSSION...<br />' + discussion.value;
-    document.getElementById('test').innerHTML=str;
-};
-</script>
+
 </body>
 </html>
