@@ -1,0 +1,267 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<HEAD>
+<TITLE> Flight Information </TITLE>
+<link rel="shortcut icon" href="images/widget.png"/>
+<link rel="stylesheet" type="text/css" href="fids.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+</HEAD>
+<BODY>
+
+<br>
+
+<table>
+  <tr>
+    <th>DEPARTURES</th>
+    <th>Time</th>
+    <th>Flight</th>
+    <th>Gate</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Atlanta</td>
+    <td>5:30am</td>
+    <td>2723</td>
+    <td>D5</td>
+    <td><p style="color:red">Cancelled</p></td>
+  </tr>
+  <tr>
+    <td>Atlanta</td>
+    <td>5:00pm</td>
+    <td>2331</td>
+    <td>D5</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Atlanta</td>
+    <td>7:15pm</td>
+    <td>1791</td>
+    <td>D5</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Baltimore</td>
+    <td>7:15am</td>
+    <td>6041</td>
+    <td>C19</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Castleton</td>
+    <td>5:15pm</td>
+    <td>2902</td>
+    <td>B6</td>
+    <td>On Time</td>
+  </tr>  
+  <tr>
+    <td>Charlotte</td>
+    <td>6:00am</td>
+    <td>827</td>
+    <td>A10</td>
+    <td><p style="color:red">Cancelled</p></td>
+  </tr>
+<tr>
+    <td>Chicago (MDW)</td>
+    <td>8:15pm</td>
+    <td>785</td>
+    <td>A6</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Chicago (ORD)</td>
+    <td>5:28am</td>
+    <td>3816</td>
+    <td></td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Chicago (ORD)</td>
+    <td>5:56am</td>
+    <td>2331</td>
+    <td>A9</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Chicago (ORD)</td>
+    <td>6:45am</td>
+    <td>3725</td>
+    <td></td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Chicago (ORD)</td>
+    <td>3:55pm</td>
+    <td>1791</td>
+    <td>D5</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Chicago (ORD)</td>
+    <td>8:35</td>
+    <td>841</td>
+    <td>B9</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Dallas (Love Fld)</td>
+    <td>3:50pm</td>
+    <td>3281</td>
+    <td>A7</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Dallas-Ft. Worth</td>
+    <td>6:47am</td>
+    <td>2621</td>
+    <td>A9</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Dallas-Ft. Worth</td>
+    <td>3:47pm</td>
+    <td>2581</td>
+    <td>B9</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Dallas-Ft. Worth</td>
+    <td>8:35pm</td>
+    <td>885</td>
+    <td>B10</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Denver</td>
+    <td>4:10pm</td>
+    <td>5257</td>
+    <td>D5</td>
+    <td>On Time</td>
+  </tr>
+  <tr>
+    <td>Denver</td>
+    <td>6:25pm</td>
+    <td>3804</td>
+    <td>C21</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Edmonton</td>
+    <td>9:15pm</td>
+    <td>354</td>
+    <td>A5</td>
+    <td>On Time</td>
+  </tr>  <tr>
+    <td>Freebuild</td>
+    <td>4:15pm</td>
+    <td>2906</td>
+    <td>B8</td>
+    <td>On Time</td>
+  </tr>  <tr>
+    <td>Houston</td>
+    <td>7:15pm</td>
+    <td>547</td>
+    <td>A11</td>
+    <td>On Time</td>
+  </tr>  <tr>
+    <td>Los Angeles</td>
+    <td>6:12pm</td>
+    <td>621</td>
+    <td>D3</td>
+    <td>On Time</td>
+  </tr>  <tr>
+    <td>Madison</td>
+    <td>8:05pm</td>
+    <td>3533</td>
+    <td>B11</td>
+    <td><p style="color:#db9539" class="js-nametag">Delayed</p><p style="color:#db9539" class="js-nametag">Eagle Shitbird</p></td>
+  </tr>  <tr>
+    <td>Miami</td>
+    <td>9:00pm</td>
+    <td>2435</td>
+    <td>B7</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Minneapolis/St. Paul</td>
+    <td>3:00pm</td>
+    <td>2641</td>
+    <td>D4</td>
+    <td>Departed</td>
+  </tr>
+<tr>
+    <td>Munich</td>
+    <td>2:50pm</td>
+    <td>791</td>
+    <td>C1</td>
+    <td>Departed</td>
+  </tr>
+<tr>
+    <td>New York (LGA)</td>
+    <td>6:48pm</td>
+    <td>2420</td>
+    <td>A7</td>
+    <td><p style="color:#db9539" class="js-nametag">Gate Change</p><p style="color:#db9539" class="js-nametag">Check Monitors</p></td>
+  </tr>
+<tr>
+    <td>Philadelphia</td>
+    <td>4:21pm</td>
+    <td>1688</td>
+    <td>C5</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Salt Lake City</td>
+    <td>4:15pm</td>
+    <td>2622</td>
+    <td>A8</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Seattle</td>
+    <td>3:25pm</td>
+    <td>372</td>
+    <td>B3</td>
+    <td><p style="color:#309121">Now Boarding</p></td>
+  </tr>
+<tr>
+    <td>Tokyo</td>
+    <td>3:35pm</td>
+    <td>192</td>
+    <td>C2</td>
+    <td><p style="color:#309121"><b>Now Boarding</b></p></td>
+  </tr>
+<tr>
+    <td>Toronto</td>
+    <td>3:00pm</td>
+    <td>486</td>
+    <td>A1</td>
+    <td>Departed</td>
+  </tr>
+<tr>
+    <td>Vancouver</td>
+    <td>7:00pm</td>
+    <td>541</td>
+    <td>A3</td>
+    <td>On Time</td>
+  </tr>
+<tr>
+    <td>Washington, DC (IAD)</td>
+    <td>4:53pm</td>
+    <td>63</td>
+    <td>D2</td>
+    <td>On Time</td>
+  </tr>
+</table>
+
+
+
+<img src="addlresources/svia.png" class="footimage" width="100%"/>
+
+
+</BODY>
+</HTML>
