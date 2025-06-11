@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+
+
+
+body{
+background-color:#F9F9F9;
+font-family: "Open Sans", sans-serif;
+font-size: 19px;
+}
+
+p {
+  margin-top: 0px;
+  line-height: 0px;   /* within paragraph */
+  margin-bottom: 0px; /* between paragraphs */
+  }
+
+div{
+  posititon: relative;
+}
+.js-nametag{
+  position: absolute;
+}
+.js-nametag:nth-child(1){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;  
+}
+
+
+.js-nametag:nth-child(2){
+  animation-name: fade;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes fade{
+    0%,50% {
+      opacity: 0;
+}
+    100%{
+      opacity: 1;
+  }
+}
+
+table {
+  padding: 0;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* table td { width: 20em; border: 1px solid black; } */
+table td:nth-child(2) { text-align: end; }
+table td:nth-child(5) { width: 200px; }
+
+.footimage{
+    position:fixed;
+    bottom:0px;
+    left:0%;
+}
+
+
